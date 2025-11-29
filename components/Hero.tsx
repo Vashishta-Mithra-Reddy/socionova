@@ -49,9 +49,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-6xl font-bold font-nippo tracking-tighter"
+          className="text-5xl md:text-6xl font-bold font-jakarta tracking-tighter"
         >
-          SOCIO<span className="text-primary">NOVA</span>
+          Socio<span className="text-primary">nova</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

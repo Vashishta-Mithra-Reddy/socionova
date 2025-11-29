@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Silkscreen } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans, Silkscreen } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -26,6 +26,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+});
+
 const nippo = localFont({
   src: "./fonts/nippo.woff2",
   variable: "--font-nippo",
@@ -45,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${nippo.variable} ${geistSans.variable} ${geistMono.variable} ${silkScreen.variable} ${clashDisplay.variable} antialiased`}
+        className={`${nippo.variable} ${jakarta.variable} ${geistSans.variable} ${geistMono.variable} ${silkScreen.variable} ${clashDisplay.variable} antialiased`}
       >
         <Providers>
           <Header />
