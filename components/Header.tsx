@@ -29,9 +29,9 @@ export default function Header() {
   });
 
   // Smoothly round header to 2xl (~16px)
-  const headerRadius = useTransform(scrollY, [0, 120], [10, 16]);
+  const headerRadius = useTransform(scrollY, [0, 120], [10, 20]);
   // Animate container width from 7xl (1280px) to 5xl (1024px)
-  const headerMaxWidth = useTransform(scrollY, [60, 120], [1280, 1152]);
+  const headerMaxWidth = useTransform(scrollY, [60, 120], [1280, 1024]);
 
   return (
     <motion.header
@@ -60,7 +60,7 @@ export default function Header() {
 
       <div className="relative w-full flex justify-between items-center px-4 py-3">
         <Link href="/" className="pl-2">
-          <motion.span className="font-semibold flex items-center justify-center text-2xl font-clash-display text-foreground pl-2">
+          <motion.span className="font-semibold flex items-center justify-center text-2xl font-clash-display text-foreground">
             {/* <Smartphone className="mr-2 inline-block" size={20} /> */}
             Socionova
           </motion.span>
