@@ -1,21 +1,19 @@
-import {
-  Facebook,
-  Instagram,
-  Youtube,
-  Send,
-} from "lucide-react";
+import { Facebook, Instagram, Youtube, Send } from "lucide-react";
 
 export const services = [
   {
     platform: "Facebook",
-    icon: <Facebook className="w-8 h-8" />,
+    icon: Facebook,
     description:
       "Establish authority and drive engagement with comprehensive Facebook growth solutions.",
     details:
       "Our Facebook services are designed to build credible social proof. From increasing page followers to boosting post engagement, we help you create a thriving community around your brand.",
     stats: ["10k+ Pages Scaled", "5M+ Likes Delivered", "24/7 Support"],
     items: [
-      { name: "Page Likes & Followers", desc: "Real profiles to boost credibility" },
+      {
+        name: "Page Likes & Followers",
+        desc: "Real profiles to boost credibility",
+      },
       { name: "Post Reactions & Likes", desc: "Increase visibility in feeds" },
       { name: "Live Stream Views", desc: "Boost concurrent viewership" },
       { name: "All Types of Followers", desc: "Targeted & Global options" },
@@ -27,7 +25,7 @@ export const services = [
   },
   {
     platform: "Instagram",
-    icon: <Instagram className="w-8 h-8" />,
+    icon: Instagram,
     description:
       "Dominate the visual landscape with high-quality followers, likes, and views.",
     details:
@@ -36,7 +34,10 @@ export const services = [
     items: [
       { name: "Followers & Reach", desc: "High-quality & stable growth" },
       { name: "Story & Post Views", desc: "Enhance your analytics" },
-      { name: "Live Stream & Comments", desc: "Active engagement during lives" },
+      {
+        name: "Live Stream & Comments",
+        desc: "Active engagement during lives",
+      },
       { name: "Indian Services", desc: "Region-specific targeting available" },
     ],
     gradient: "from-pink-600 to-purple-600",
@@ -46,7 +47,7 @@ export const services = [
   },
   {
     platform: "YouTube",
-    icon: <Youtube className="w-8 h-8" />,
+    icon: Youtube,
     description:
       "Accelerate channel monetization and video rankings with strategic growth.",
     details:
@@ -65,7 +66,7 @@ export const services = [
   },
   {
     platform: "Telegram",
-    icon: <Send className="w-8 h-8" />,
+    icon: Send,
     description:
       "Build massive communities and channels with active, targeted members.",
     details:

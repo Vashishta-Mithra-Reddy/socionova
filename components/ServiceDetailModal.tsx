@@ -10,7 +10,7 @@ interface ServiceItem {
 
 interface Service {
   platform: string;
-  icon: React.ReactNode;
+  icon: React.ComponentType<{ className?: string }>;
   description: string;
   details: string;
   stats: string[];
@@ -61,7 +61,7 @@ export default function ServiceDetailModal({
                 <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
                 <div className="relative z-10">
                   <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6">
-                    {service.icon}
+                    <service.icon className="w-8 h-8" />
                   </div>
                   <h2 className="text-4xl font-bold font-nippo mb-4">
                     {service.platform}

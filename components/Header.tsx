@@ -29,13 +29,13 @@ export default function Header() {
   });
 
   // Smoothly round header to 2xl (~16px)
-  const headerRadius = useTransform(scrollY, [0, 120], [10, 20]);
+  const headerRadius = useTransform(scrollY, [0, 120], [10, 16]);
   // Animate container width from 7xl (1280px) to 5xl (1024px)
   const headerMaxWidth = useTransform(scrollY, [60, 120], [1280, 1024]);
 
   return (
     <motion.header
-      className="w-full fixed top-0 md:top-6 left-0 md:left-1/2 md:-translate-x-1/2 z-40 backdrop-blur-3xl transition-all duration-700 bg-header border-border border"
+      className="w-full fixed top-0 md:top-6 left-0 md:left-1/2 md:-translate-x-1/2 z-40 backdrop-blur-3xl transition-all duration-700 bg-foreground/5"
       style={{ borderRadius: headerRadius, maxWidth: headerMaxWidth }}
     >
       {/* Color layer: transparent initially, fades in on scroll */}
@@ -60,9 +60,9 @@ export default function Header() {
 
       <div className="relative w-full flex justify-between items-center px-4 py-3">
         <Link href="/" className="pl-2">
-          <motion.span className="font-semibold flex items-center justify-center text-2xl font-clash-display text-foreground">
+          <motion.span className="font-bold flex items-center justify-center text-2xl font-nippo text-foreground">
             {/* <Smartphone className="mr-2 inline-block" size={20} /> */}
-            Socionova
+            SOCIONOVA
           </motion.span>
         </Link>
 
@@ -85,7 +85,7 @@ export default function Header() {
           <ModeToggle />
           <Link
             href="/contact-us"
-            className="hidden md:inline-flex text-white transition-all duration-500 bg-blue-600 px-4.5 py-2.5 rounded-xl"
+            className="hidden md:inline-flex text-white transition-all duration-500 bg-blue-600 px-4.5 py-2.5 corner-squircle hover:corner-scoop rounded-[100px] "
           >
             Contact Us
           </Link>
