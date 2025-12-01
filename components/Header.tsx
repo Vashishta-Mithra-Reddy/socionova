@@ -17,6 +17,7 @@ export default function Header() {
   const routes = [
     { key: "about", label: "About", href: "/#about" },
     { key: "services", label: "Services", href: "/#services" },
+    { key: "social-services", label: "Social Media", href: "/#social-services" },
     { key: "team", label: "Team", href: "/#team" },
     { key: "contact", label: "Contact", href: "/#contact" },
   ];
