@@ -15,6 +15,7 @@ export default function Header() {
   // const pathname = usePathname();
 
   const routes = [
+    { key: "about", label: "About", href: "/#about" },
     { key: "services", label: "Services", href: "/#services" },
     { key: "team", label: "Team", href: "/#team" },
     { key: "contact", label: "Contact", href: "/#contact" },

@@ -1,4 +1,16 @@
-import { Star, Megaphone, MousePointerClick, Mail } from "lucide-react";
+import {
+  Star,
+  Megaphone,
+  MousePointerClick,
+  Mail,
+  Share2,
+} from "lucide-react";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaTelegram,
+} from "react-icons/fa6";
 
 export const services = [
   {
@@ -101,7 +113,7 @@ export const services = [
 ];
 
 export const team = [
-  { name: "Aditya", role: "Founder", image: "/team/aditya_plain.webp" },
+  { name: "Aditya Prashar", role: "Founder", image: "/team/aditya_plain.webp" },
   {
     name: "Yashpal Chauhan",
     role: "Operations Manager",
@@ -112,10 +124,90 @@ export const team = [
     role: "Team Leader",
     image: "/team/samridhi_tomar.webp",
   },
-  { name: "Ketan", role: "Front End Manager", image: "/team/ketan.webp" },
   {
     name: "Sneha Chauhan",
     role: "Accountant",
     image: "/team/sneha_chauhan.webp",
+  },
+  { name: "Ketan", role: "Front End Manager", image: "/team/ketan.webp" },
+];
+
+export const socialPlatforms = [
+  {
+    name: "Facebook",
+    icon: FaFacebook,
+    gradient: "from-blue-600 to-blue-800",
+    accent: "text-blue-500",
+    bg: "bg-blue-500/10",
+    border: "border-blue-500/20",
+    items: [
+      "Facebook Likes",
+      "Post Reactions",
+      "Live Stream Views",
+      "Page Likes & Followers",
+      "All Types of Followers",
+    ],
+  },
+  {
+    name: "Instagram",
+    icon: FaInstagram,
+    gradient: "from-pink-600 to-purple-700",
+    accent: "text-pink-500",
+    bg: "bg-pink-500/10",
+    border: "border-pink-500/20",
+    items: [
+      "Live Stream",
+      "Channel Members",
+      "Comments",
+      "Reach + Impression",
+      "Shares",
+      "Story Views",
+      "Followers",
+      "Post Views",
+      "Indian Service",
+    ],
+  },
+  {
+    name: "YouTube",
+    icon: FaYoutube,
+    gradient: "from-red-600 to-red-800",
+    accent: "text-red-500",
+    bg: "bg-red-500/10",
+    border: "border-red-500/20",
+    items: [
+      "Native Ads Views (Indian)",
+      "Shorts",
+      "Watchtime (Drop/Non Drop) 30/60 Day",
+      "Native Social Ads",
+      "Live Stream Views",
+      "Community Likes",
+      "Subscribers",
+      "Comments + Likes",
+      "Comment Likes",
+    ],
+  },
+  {
+    name: "Telegram",
+    icon: FaTelegram,
+    gradient: "from-cyan-600 to-cyan-800",
+    accent: "text-cyan-500",
+    bg: "bg-cyan-500/10",
+    border: "border-cyan-500/20",
+    items: [
+      "Bot Start",
+      "Real Views",
+      "Post Share",
+      "Story Views",
+      "Bot Start Referral",
+      "Story Reaction",
+      "All Reaction",
+      "Future Post View",
+      "Cheapest Members",
+      "Non Drop Members",
+      "Targeted Members",
+      "24 Hour Active Member",
+      "Premium Exclusive Base 1-6",
+      "Premium Members",
+    ],
   },
 ];
