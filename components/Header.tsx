@@ -86,8 +86,8 @@ export default function Header() {
         <div className="flex items-center gap-2 transition-all duration-0 font-nippo">
           <ModeToggle />
           <Link
-            href="/contact-us"
-            className="hidden md:inline-flex text-white transition-all duration-500 bg-blue-600 px-4.5 py-2.5 corner-squircle hover:corner-scoop rounded-[100px] "
+            href="/#contact"
+            className="hidden md:inline-flex text-white transition-all duration-500 bg-blue-600 px-4.5 py-2.5 corner-squircle rounded-[100px] "
           >
             Contact Us
           </Link>
