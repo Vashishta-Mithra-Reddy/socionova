@@ -6,14 +6,14 @@ import { team } from "@/lib/data";
 export default function Team() {
   return (
     <section id="team" className="py-24 px-4 md:px-12 bg-secondary/20">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl px-16 mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl md:text-6xl font-nippo font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-4">
             The Team
           </h2>
           <p className="text-zinc-400 text-lg">

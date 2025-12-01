@@ -13,12 +13,12 @@ export default function Contact() {
 
           <div className="relative z-10 flex flex-col justify-center">
             <h2 className="text-5xl font-nippo font-bold mb-6 text-foreground">
-              Ready to Scale?
+              Ready to Grow?
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-xl">
-              Partner with Socionova for premium social growth solutions
-              tailored to your goals. Our team delivers reliable,
-              analytics-friendly results with white-glove support.
+              Get your free quote today. SocioNova delivers strategic review
+              management, online marketing, PPC, and email solutions tailored to
+              your goals.
             </p>
 
             {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
@@ -38,18 +38,18 @@ export default function Contact() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="mailto:contact@socionova.com?subject=Project%20Inquiry%20-%20Socionova&body=Tell%20us%20about%20your%20goals%20and%20timeline."
+                href="mailto:contact@socionova.com?subject=Free%20Quote%20Request&body=Share%20your%20requirements%2C%20timeline%2C%20and%20budget%20range."
                 className="inline-flex items-center gap-3 px-8 py-4 bg-foreground text-background rounded-xl font-bold hover:opacity-90 transition-opacity"
-                aria-label="Email Socionova"
+                aria-label="Get a free quote"
               >
-                <Mail className="w-5 h-5" /> Email Us
+                <Mail className="w-5 h-5" /> Get Free Quote
               </a>
               <a
                 href="mailto:contact@socionova.com?subject=Request%20a%20Proposal&body=Please%20share%20your%20requirements%20and%20budget%20range."
                 className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-bold hover:opacity-90 transition-opacity"
                 aria-label="Request a proposal"
               >
-                <ArrowRight className="w-5 h-5" /> Request Proposal
+                <ArrowRight className="w-5 h-5" /> Start Project
               </a>
             </div>
           </div>
@@ -70,9 +70,12 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">
-                  Available upon request
-                </span>
+                <a
+                  href="tel:+919736697172"
+                  className="text-foreground hover:underline"
+                >
+                  Call: 9736697172
+                </a>
               </div>
             </div>
 

@@ -1,87 +1,102 @@
-import { Facebook, Instagram, Youtube, Send } from "lucide-react";
+import { Star, Megaphone, MousePointerClick, Mail } from "lucide-react";
 
 export const services = [
   {
-    platform: "Facebook",
-    icon: Facebook,
+    platform: "Review Management (OTAs)",
+    icon: Star,
     description:
-      "Establish authority and drive engagement with comprehensive Facebook growth solutions.",
+      "Manage reviews across major OTAs to build trust and credibility.",
     details:
-      "Our Facebook services are designed to build credible social proof. From increasing page followers to boosting post engagement, we help you create a thriving community around your brand.",
-    stats: ["10k+ Pages Scaled", "5M+ Likes Delivered", "24/7 Support"],
+      "Monitor feedback, respond professionally, manage negatives, and encourage positive reviews. We deliver clear reports and reputation strategies that strengthen your brand.",
+    stats: [
+      "Reputation Improvement",
+      "Transparent Reporting",
+      "Faster Conversions",
+    ],
     items: [
+      { name: "Monitor & Track Reviews", desc: "All major OTAs and listings" },
       {
-        name: "Page Likes & Followers",
-        desc: "Real profiles to boost credibility",
+        name: "Respond & Resolve",
+        desc: "Professional replies and escalation",
       },
-      { name: "Post Reactions & Likes", desc: "Increase visibility in feeds" },
-      { name: "Live Stream Views", desc: "Boost concurrent viewership" },
-      { name: "All Types of Followers", desc: "Targeted & Global options" },
-    ],
-    gradient: "from-blue-600 to-blue-800",
-    accent: "text-blue-500",
-    bg: "bg-blue-500/10",
-    border: "border-blue-500/20",
-  },
-  {
-    platform: "Instagram",
-    icon: Instagram,
-    description:
-      "Dominate the visual landscape with high-quality followers, likes, and views.",
-    details:
-      "Instagram is all about perception. We provide high-retention followers and authentic engagement to ensure your profile looks professional and attractive to potential sponsors or customers.",
-    stats: ["20k+ Influencers", "10M+ Followers", "Instant Start"],
-    items: [
-      { name: "Followers & Reach", desc: "High-quality & stable growth" },
-      { name: "Story & Post Views", desc: "Enhance your analytics" },
       {
-        name: "Live Stream & Comments",
-        desc: "Active engagement during lives",
+        name: "Negative Review Management",
+        desc: "Address issues and mitigate impact",
       },
-      { name: "Indian Services", desc: "Region-specific targeting available" },
+      {
+        name: "Encourage Positive Feedback",
+        desc: "Programs for satisfied customers",
+      },
+      { name: "Performance Reporting", desc: "Trends, insights, and actions" },
     ],
-    gradient: "from-pink-600 to-purple-600",
-    accent: "text-pink-500",
-    bg: "bg-pink-500/10",
-    border: "border-pink-500/20",
+    gradient: "from-slate-600 to-slate-800",
+    accent: "text-slate-500",
+    bg: "bg-slate-500/10",
+    border: "border-slate-500/20",
   },
   {
-    platform: "YouTube",
-    icon: Youtube,
+    platform: "Online Marketing",
+    icon: Megaphone,
     description:
-      "Accelerate channel monetization and video rankings with strategic growth.",
+      "Data-driven strategies to reach the right audience at the right time.",
     details:
-      "Stop waiting for the algorithm. Our YouTube services help you reach monetization thresholds faster and get your videos recommended to a broader audience through retention-focused views.",
-    stats: ["50M+ Views", "1M+ Subs", "Monetization Ready"],
+      "SEO, content, lead gen, brand campaigns, and conversion-focused landing pages. We blend creativity with analytics for consistent growth.",
+    stats: ["Targeted Reach", "Consistent Growth", "Measurable Outcomes"],
     items: [
-      { name: "Subscribers & Likes", desc: "Permanent & non-drop subs" },
-      { name: "Watchtime (Non-Drop)", desc: "4000 hours packages available" },
-      { name: "Shorts & Live Views", desc: "Viral boost for short-form" },
-      { name: "Native Ads Views", desc: "Legitimate discovery traffic" },
+      { name: "SEO", desc: "Technical, on-page, off-page" },
+      { name: "Content Marketing", desc: "Authority-building content" },
+      { name: "Lead Generation", desc: "Funnels and qualification" },
+      { name: "Brand Awareness", desc: "Multi-channel campaigns" },
+      { name: "Landing Page Strategy", desc: "Conversion-first design" },
     ],
-    gradient: "from-red-600 to-red-800",
-    accent: "text-red-500",
-    bg: "bg-red-500/10",
-    border: "border-red-500/20",
+    gradient: "from-indigo-600 to-indigo-800",
+    accent: "text-indigo-500",
+    bg: "bg-indigo-500/10",
+    border: "border-indigo-500/20",
   },
   {
-    platform: "Telegram",
-    icon: Send,
+    platform: "PPC Advertising",
+    icon: MousePointerClick,
     description:
-      "Build massive communities and channels with active, targeted members.",
+      "High-intent traffic and leads through optimized paid campaigns.",
     details:
-      "Telegram is the future of community building. We help you launch and scale channels with thousands of members, ensuring high activity rates and post views for maximum impact.",
-    stats: ["100k+ Groups", "20M+ Members", "Crypto Friendly"],
+      "Research, setup, optimization, budget control, A/B testing, and continuous monitoring. Every dollar is tracked to outcomes.",
+    stats: ["Optimized CPL", "Granular Targeting", "Real-Time Monitoring"],
     items: [
-      { name: "Targeted Members", desc: "Crypto, Forex, or Niche specific" },
-      { name: "Premium Members", desc: "High-value user accounts" },
-      { name: "Post & Story Views", desc: "Consistent channel activity" },
-      { name: "Bot Start & Referrals", desc: "Boost bot user base" },
+      { name: "Keyword Research", desc: "Match intent to offers" },
+      { name: "Campaign Setup", desc: "Google & social platforms" },
+      { name: "Budget Management", desc: "Cost control & scaling" },
+      { name: "A/B Testing", desc: "Ads and landing pages" },
+      { name: "Conversion Tracking", desc: "Analytics & reporting" },
     ],
-    gradient: "from-sky-500 to-blue-500",
-    accent: "text-sky-500",
-    bg: "bg-sky-500/10",
-    border: "border-sky-500/20",
+    gradient: "from-emerald-600 to-emerald-800",
+    accent: "text-emerald-500",
+    bg: "bg-emerald-500/10",
+    border: "border-emerald-500/20",
+  },
+  {
+    platform: "Email Marketing",
+    icon: Mail,
+    description:
+      "Direct, personalized engagement that nurtures leads and drives retention.",
+    details:
+      "Automations, promos, newsletters, segmentation, templates, and advanced analytics. Built for consistent results.",
+    stats: [
+      "Higher Retention",
+      "Personalized Campaigns",
+      "Actionable Analytics",
+    ],
+    items: [
+      { name: "Automated Drips", desc: "Lifecycle and nurture flows" },
+      { name: "Promotional Sequences", desc: "Offer-led campaigns" },
+      { name: "Newsletters", desc: "Editorial & updates" },
+      { name: "Segmentation", desc: "Targeted lists by behavior" },
+      { name: "Analytics & Templates", desc: "Performance tracking & design" },
+    ],
+    gradient: "from-rose-600 to-rose-800",
+    accent: "text-rose-500",
+    bg: "bg-rose-500/10",
+    border: "border-rose-500/20",
   },
 ];
 

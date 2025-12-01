@@ -33,18 +33,18 @@ export default function Services() {
           className="mb-16 text-center relative z-10"
         >
           <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">
-            OUR EXPERTISE
+            CORE SPECIALIZATIONS
           </span>
-          <h2 className="text-4xl md:text-6xl font-nippo font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60">
-            Digital Ecosystem
+          <h2 className="text-4xl md:text-6xl font-nippo font-bold mb-6">
+            Strategic Digital Solutions
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Enterprise-grade services engineered for measurable growth across
-            major platforms.
+            Review management, marketing, PPC, and email engineered for
+            measurable growth.
           </p>
         </motion.div>
 
-        <div className="mb-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="mb-10 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex items-center gap-2 bg-card/60 border border-border rounded-xl px-3 py-2">
             <Users className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">Real Audience</span>
@@ -75,12 +75,16 @@ export default function Services() {
               transition={{ delay: idx * 0.1 }}
               onClick={() => setSelectedService(service)}
               className={`group relative p-8 rounded-[2rem] border border-border/50 bg-card/50 backdrop-blur-md hover:bg-card/80 transition-colors duration-300 cursor-pointer hover:border-primary/20 hover:shadow-xl transform-gpu`}
-              style={{ willChange: 'transform, opacity' }}
+              style={{ willChange: "transform, opacity" }}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-[2rem] pointer-events-none transform-gpu`} />
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-[2rem] pointer-events-none transform-gpu`}
+              />
 
               <div className="flex items-start justify-between mb-6">
-                <div className={`p-4 rounded-2xl bg-gradient-to-br ${service.gradient} text-white shadow-lg group-hover:scale-110 transition-transform duration-300 transform-gpu`}>
+                <div
+                  className={`p-4 rounded-2xl bg-gradient-to-br ${service.gradient} text-white shadow-lg group-hover:scale-110 transition-transform duration-300 transform-gpu`}
+                >
                   <service.icon className="w-8 h-8" />
                 </div>
                 <div
@@ -110,7 +114,7 @@ export default function Services() {
               </div>
 
               <div className="mt-8 flex items-center justify-between">
-                <div className="flex items-center text-sm font-medium text-foreground/50 group-hover:text-foreground transition-colors">
+                <div className="flex items-center text-sm font-medium text-foreground/60 group-hover:text-foreground transition-colors">
                   View Details <ArrowRight className="ml-2 w-4 h-4" />
                 </div>
                 <a
@@ -120,7 +124,7 @@ export default function Services() {
                     e.stopPropagation();
                   }}
                 >
-                  Request Quote
+                  Get Free Quote
                 </a>
               </div>
             </motion.div>

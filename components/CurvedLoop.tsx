@@ -128,7 +128,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
 
   return (
     <div
-      className="h-fit pt-8 pb-12 flex items-center justify-center w-full"
+      className="h-fit pt-0 pb-0 flex items-center justify-center w-full"
       style={{ visibility: ready ? "visible" : "hidden", cursor: cursorStyle }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
@@ -158,7 +158,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
         {ready && (
           <text
             xmlSpace="preserve"
-            className={`fill-foreground ${className ?? ""}`}
+            className={`fill-foreground/40 ${className ?? ""}`}
           >
             <textPath
               ref={textPathRef}
