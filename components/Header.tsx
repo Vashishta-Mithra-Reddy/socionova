@@ -16,7 +16,7 @@ export default function Header() {
   // const pathname = usePathname();
 
   const { theme } = useTheme();
-  const logo = theme === "dark" ? "/dark_logo.webp" : "/light_logo.webp";
+  const logo = theme === "light" ? "/light_logo.webp" : "/dark_logo.webp";
 
   const routes = [
     { key: "about", label: "About", href: "/#about" },
