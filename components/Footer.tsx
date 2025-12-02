@@ -3,20 +3,32 @@
 import Link from "next/link";
 import { Facebook, Instagram, Youtube, Send, Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { useTheme } from "next-themes";
+
+
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const { resolvedTheme } = useTheme();
+  const logo = resolvedTheme === "dark" ? "/dark_logo.webp" : "/light_logo.webp";
+
   return (
     <footer className="border-t border-border bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
           <div>
-            <div className="text-2xl font-nippo font-bold">SOCIONOVA</div>
-            <p className="text-muted-foreground mt-3 text-sm max-w-sm">
+            <div className="text-2xl font-nippo font-bold">
+              <img
+                src={logo}
+                alt="SOCIONOVA"
+                className="w-40 inline-block"
+              />
+            </div>
+            <p className="text-muted-foreground mt-3 text-sm max-w-sm pl-4">
               Premium social media optimization and growth solutions for brands
               and creators.
             </p>
-            <div className="flex flex-wrap items-center gap-3 mt-6">
+            <div className="flex flex-wrap items-center gap-3 mt-6 pl-3">
               <a
                 href="#services"
                 className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-border bg-card/60 text-sm"

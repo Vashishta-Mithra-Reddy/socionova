@@ -10,9 +10,13 @@ import {
 } from "framer-motion";
 import ModeToggle from "./mode-toggle";
 import { Menu, X } from "lucide-react";
+import { useTheme } from "next-themes";
 
 export default function Header() {
   // const pathname = usePathname();
+
+  const { resolvedTheme } = useTheme();
+  const logo = resolvedTheme === "dark" ? "/dark_logo.webp" : "/light_logo.webp";
 
   const routes = [
     { key: "about", label: "About", href: "/#about" },
@@ -61,10 +65,15 @@ export default function Header() {
       />
 
       <div className="relative w-full flex justify-between items-center px-4 py-3">
-        <Link href="/" className="pl-2">
+        <Link href="/">
           <motion.span className="font-bold flex items-center justify-center text-2xl font-nippo text-foreground">
             {/* <Smartphone className="mr-2 inline-block" size={20} /> */}
-            SOCIONOVA
+            {/* SOCIONOVA */}
+            <img
+              src={logo}
+              alt="SOCIONOVA"
+              className="w-40 inline-block"
+            />
           </motion.span>
         </Link>
 
@@ -87,7 +96,7 @@ export default function Header() {
           <ModeToggle />
           <Link
             href="/#contact"
-            className="hidden md:inline-flex text-white transition-all duration-500 bg-blue-600 px-4.5 py-2.5 corner-squircle rounded-[100px] "
+            className="hidden md:inline-flex text-white transition-all duration-500 bg-blue-600 px-4.5 py-2.5 mr-2 corner-squircle rounded-[100px] "
           >
             Contact Us
           </Link>
