@@ -9,8 +9,8 @@ import { useTheme } from "next-themes";
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const { resolvedTheme } = useTheme();
-  const logo = resolvedTheme === "dark" ? "/dark_logo.webp" : "/light_logo.webp";
+  const { theme } = useTheme();
+  const logo = theme === "dark" ? "/dark_logo.webp" : "/light_logo.webp";
 
   return (
     <footer className="border-t border-border bg-background">

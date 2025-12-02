@@ -15,8 +15,8 @@ import { useTheme } from "next-themes";
 export default function Header() {
   // const pathname = usePathname();
 
-  const { resolvedTheme } = useTheme();
-  const logo = resolvedTheme === "dark" ? "/dark_logo.webp" : "/light_logo.webp";
+  const { theme } = useTheme();
+  const logo = theme === "dark" ? "/dark_logo.webp" : "/light_logo.webp";
 
   const routes = [
     { key: "about", label: "About", href: "/#about" },
