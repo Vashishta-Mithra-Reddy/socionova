@@ -13,9 +13,10 @@ export default function VisionMission() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.6 }}
         transition={{ ease: "easeIn", duration: 0.6 }}
-        className="text-center mb-16 relative z-10"
+        style={{ willChange: "transform, opacity" }}
+        className="text-center mb-16 relative z-10 transform-gpu"
       >
         {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">
           OUR PURPOSE
@@ -33,9 +34,10 @@ export default function VisionMission() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.6 }}
           transition={{ delay: 0.1, ease: "easeIn", duration: 0.6 }}
-          className="group p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 relative overflow-hidden"
+          style={{ willChange: "transform, opacity" }}
+          className="group p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 relative overflow-hidden transform-gpu"
         >
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
             <Eye className="w-32 h-32 text-primary rotate-15" />
@@ -66,9 +68,10 @@ export default function VisionMission() {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.6 }}
           transition={{ delay: 0.2, ease: "easeIn", duration: 0.6 }}
-          className="group p-10 rounded-[2.5rem] bg-card border border-border hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500 relative overflow-hidden"
+          style={{ willChange: "transform, opacity" }}
+          className="group p-10 rounded-[2.5rem] bg-card border border-border hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500 relative overflow-hidden transform-gpu"
         >
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
             <Target className="w-32 h-32 text-blue-500 -rotate-12" />

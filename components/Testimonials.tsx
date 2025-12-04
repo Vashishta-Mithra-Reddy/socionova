@@ -90,8 +90,9 @@ export default function Testimonials() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="text-center mb-12"
+        viewport={{ once: true, amount: 0.6 }}
+        style={{ willChange: "transform, opacity" }}
+        className="text-center mb-12 transform-gpu"
       >
         <h2 className="text-4xl md:text-5xl font-nippo font-bold">
           Love from Clients

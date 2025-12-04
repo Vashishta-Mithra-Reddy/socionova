@@ -54,9 +54,11 @@ export default function Pricing() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.6 }}
         transition={{ ease: "easeIn", duration: 0.6 }}
-        className="text-center mb-16"
+        className="text-center mb-16 transform-gpu"
+        style={{ willChange: "transform, opacity" }}
+        suppressHydrationWarning
       >
         {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">Best Pricing</span> */}
         <h2 className="text-4xl md:text-5xl font-nippo font-bold">Our Pricing Plans</h2>
@@ -69,14 +71,16 @@ export default function Pricing() {
             key={plan.name}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.6 }}
             transition={{ delay: i * 0.1, ease: "easeIn", duration: 0.6 }}
             whileHover={{ y: -8 }}
+            suppressHydrationWarning
             className={`flex flex-col p-8 rounded-[2rem] bg-card border ${
               plan.popular
                 ? "border-2 border-foreground/30 shadow-xl shadow-primary/10 relative z-10 scale-105"
                 : "border-border/50 relative z-0 hover:border-primary/50"
-            } h-full transition-all duration-300`}
+            } h-full transition-all duration-300 transform-gpu`}
+           style={{ willChange: "transform, opacity" }}
           >
             {plan.popular && (
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg tracking-wide">

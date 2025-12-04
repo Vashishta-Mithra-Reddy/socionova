@@ -48,7 +48,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-6xl font-bold font-nippo tracking-tighter mb-3"
+          style={{ willChange: "transform, opacity" }}
+          className="text-5xl md:text-6xl font-bold font-nippo tracking-tighter mb-3 transform-gpu"
         >
           Socio<span className="text-primary">nova</span>
         </motion.h1>
@@ -56,7 +57,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light mb-4"
+          style={{ willChange: "transform, opacity" }}
+          className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light mb-4 transform-gpu"
         >
           Premium Social Media Marketing & Growth Solutions
         </motion.p>
@@ -65,7 +67,8 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-4 mt-4"
+          style={{ willChange: "transform, opacity" }}
+          className="flex flex-col sm:flex-row gap-4 mt-4 transform-gpu"
         >
           <a
             href="#services"

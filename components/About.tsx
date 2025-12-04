@@ -11,8 +11,9 @@ export default function About() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeIn", duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-center mb-16 relative z-10"
+        viewport={{ once: true, amount: 0.6 }}
+        style={{ willChange: "transform, opacity" }}
+        className="text-center mb-16 relative z-10 transform-gpu"
       >
         <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-6">
           Welcome to <span className="text-primary">SocioNova</span>
@@ -30,9 +31,10 @@ export default function About() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.6 }}
           transition={{ ease: "easeIn", duration: 0.6, delay: 0.2 }}
-          className="group p-8 rounded-[2rem] bg-card border border-border hover:border-purple-500/30 hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 relative overflow-hidden"
+          style={{ willChange: "transform, opacity" }}
+          className="group p-8 rounded-[2rem] bg-card border border-border hover:border-purple-500/30 hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 relative overflow-hidden transform-gpu"
         >
           <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
             <Zap className="w-32 h-32 -rotate-12" />
@@ -56,8 +58,9 @@ export default function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeIn", duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="group p-8 rounded-[2rem] bg-card border border-border hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden"
+          viewport={{ once: true, amount: 0.6 }}
+          style={{ willChange: "transform, opacity" }}
+          className="group p-8 rounded-[2rem] bg-card border border-border hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden transform-gpu"
         >
           <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
             <Globe2 className="w-32 h-32 rotate-12" />

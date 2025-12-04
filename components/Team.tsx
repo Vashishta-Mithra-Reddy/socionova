@@ -36,9 +36,10 @@ export default function Team() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.6 }}
-          className="mb-20 text-center max-w-2xl mx-auto"
+          style={{ willChange: "transform, opacity" }}
+          className="mb-20 text-center max-w-2xl mx-auto transform-gpu"
         >
           <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-6 tracking-tight">
             The Team
@@ -53,8 +54,9 @@ export default function Team() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center"
+          viewport={{ once: true, margin: "-100px", amount: 0.6 }}
+          style={{ willChange: "transform, opacity" }}
+          className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center transform-gpu"
         >
           {/* 1. Founder Column (Takes up 4 cols on large screens) */}
           {founder && (

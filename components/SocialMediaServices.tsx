@@ -101,13 +101,14 @@ const ServiceCard = ({ platform, index }: { platform: SocialPlatform; index: num
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "-50px", amount: 0.6 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
       layout="position" /* Important for smooth grid readjustment */
-      className="group relative flex flex-col h-full bg-card border border-border/40 hover:border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+      className="group relative flex flex-col h-full bg-card border border-border/40 hover:border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform-gpu"
       style={{
         // subtle colored glow on hover
         boxShadow: `0 0 0 1px transparent`, 
+        willChange: "transform, opacity",
       }}
     >
         {/* Dynamic Hover Border Glow via inline styles or tailwind arbitrary values */}

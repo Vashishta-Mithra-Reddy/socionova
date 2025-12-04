@@ -29,7 +29,7 @@ export default function Services() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.6 }}
           className="mb-16 text-center relative z-10"
         >
           <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">
@@ -71,7 +71,7 @@ export default function Services() {
               key={service.platform}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.6 }}
               transition={{ delay: idx * 0.1 }}
               onClick={() => setSelectedService(service)}
               className={`group relative p-8 rounded-[2rem] border border-border/50 bg-card/50 backdrop-blur-md hover:bg-card/80 transition-colors duration-300 cursor-pointer hover:border-primary/20 hover:shadow-xl transform-gpu`}

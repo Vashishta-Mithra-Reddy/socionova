@@ -134,4 +134,5 @@
 .flicker-fix {
   transform: translateZ(0);
   backface-visibility: hidden;
+  will-change: transform, opacity;
 }
