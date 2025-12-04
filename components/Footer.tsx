@@ -21,14 +21,14 @@ export default function Footer() {
               <img
                 src={logo}
                 alt="SOCIONOVA"
-                className="w-40 inline-block"
+                className="w-52 inline-block"
               />
             </div>
-            <p className="text-muted-foreground mt-3 text-sm max-w-sm pl-4">
+            <p className="text-muted-foreground text-sm max-w-sm pl-4">
               Premium social media optimization and growth solutions for brands
               and creators.
             </p>
-            <div className="flex flex-wrap items-center gap-3 mt-6 pl-3">
+            <div className="flex flex-wrap items-center gap-3 mt-4 pl-3">
               <a
                 href="#services"
                 className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-border bg-card/60 text-sm"
