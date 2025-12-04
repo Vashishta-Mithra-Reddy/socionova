@@ -5,7 +5,7 @@ import { Target, Eye, Rocket, Lightbulb } from "lucide-react";
 
 export default function VisionMission() {
   return (
-    <section className="py-24 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden">
+    <section className="py-24 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden flicker-fix">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 left-1/4 w-96 h-96 blur-[100px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/5 blur-[100px] rounded-full pointer-events-none" />
@@ -14,6 +14,7 @@ export default function VisionMission() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ ease: "easeIn", duration: 0.6 }}
         className="text-center mb-16 relative z-10"
       >
         {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">
@@ -33,7 +34,7 @@ export default function VisionMission() {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.1, ease: "easeIn", duration: 0.6 }}
           className="group p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
@@ -66,7 +67,7 @@ export default function VisionMission() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.2, ease: "easeIn", duration: 0.6 }}
           className="group p-10 rounded-[2.5rem] bg-card border border-border hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-500">

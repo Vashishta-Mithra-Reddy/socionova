@@ -4,12 +4,13 @@ import { Zap, Globe2 } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden">
+    <section id="about" className="py-24 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden flicker-fix">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] blur-[100px] rounded-full pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeIn", duration: 0.6 }}
         viewport={{ once: true }}
         className="text-center mb-16 relative z-10"
       >
@@ -27,10 +28,10 @@ export default function About() {
         
 
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ ease: "easeIn", duration: 0.6, delay: 0.2 }}
           className="group p-8 rounded-[2rem] bg-card border border-border hover:border-purple-500/30 hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
@@ -52,10 +53,10 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeIn", duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
           className="group p-8 rounded-[2rem] bg-card border border-border hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity duration-500">

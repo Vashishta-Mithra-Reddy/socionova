@@ -50,11 +50,12 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-16 px-4 md:px-12 max-w-7xl mx-auto">
+    <section id="pricing" className="py-16 px-4 md:px-12 max-w-7xl mx-auto flicker-fix">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ ease: "easeIn", duration: 0.6 }}
         className="text-center mb-16"
       >
         {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">Best Pricing</span> */}
@@ -69,7 +70,7 @@ export default function Pricing() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
+            transition={{ delay: i * 0.1, ease: "easeIn", duration: 0.6 }}
             whileHover={{ y: -8 }}
             className={`flex flex-col p-8 rounded-[2rem] bg-card border ${
               plan.popular

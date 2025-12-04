@@ -130,3 +130,8 @@
     background-color: var(--color-header);
   }
 }
+
+.flicker-fix {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
