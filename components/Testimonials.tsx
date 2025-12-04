@@ -5,18 +5,66 @@ import { Star } from "lucide-react";
 import { useState } from "react";
 
 const quotes = [
-  "SocioNova improved our online visibility within weeks. Excellent service!",
-  "Their review management system streamlined all our OTA feedback.",
-  "Outstanding results with social media optimisation. Highly recommended.",
-  "Our PPC campaigns performed better than ever after partnering with them.",
-  "Professional, fast, and result-driven digital marketing solutions.",
-  "SocioNova helped us boost customer engagement across all platforms.",
-  "Their email marketing strategies brought us real conversions.",
-  "Perfect agency for online reputation and review handling.",
-  "We saw measurable growth through their online marketing efforts.",
-  "Very responsive team with deep expertise in digital strategies.",
-  "Transparent reporting and real performance.",
-  "Great agency for long-term digital growth.",
+  {
+    text: "SocioNova improved our online visibility within weeks. Excellent service!",
+    name: "Aarav Patel",
+    rating: 5,
+  },
+  {
+    text: "Their review management system streamlined all our OTA feedback.",
+    name: "Vihaan Gupta",
+    rating: 5,
+  },
+  {
+    text: "Outstanding results with social media optimisation. Highly recommended.",
+    name: "Diya Sharma",
+    rating: 5,
+  },
+  {
+    text: "Our PPC campaigns performed better than ever after partnering with them.",
+    name: "Sai Krishna",
+    rating: 5,
+  },
+  {
+    text: "Professional, fast, and result-driven digital marketing solutions.",
+    name: "Ishaan Sharma",
+    rating: 5,
+  },
+  {
+    text: "SocioNova helped us boost customer engagement across all platforms.",
+    name: "Ishita Verma",
+    rating: 5,
+  },
+  {
+    text: "Their email marketing strategies brought us real conversions.",
+    name: "Anika Singh",
+    rating: 5,
+  },
+  {
+    text: "Perfect agency for online reputation and review handling.",
+    name: "Sanya Mehta",
+    rating: 5,
+  },
+  {
+    text: "We saw measurable growth through their online marketing efforts.",
+    name: "Vikram Reddy",
+    rating: 5,
+  },
+  {
+    text: "Very responsive team with deep expertise in digital strategies.",
+    name: "Rahul Desai",
+    rating: 4,
+  },
+  {
+    text: "Transparent reporting and real performance.",
+    name: "Meera Joshi",
+    rating: 4,
+  },
+  {
+    text: "Great agency for long-term digital growth.",
+    name: "Arun Nair",
+    rating: 4,
+  },
 ];
 
 const avatars = [
@@ -74,15 +122,27 @@ export default function Testimonials() {
                     draggable={false}
                   />
                 </div>
+                <div className="ml-3 flex flex-col justify-center">
+                  <h4 className="text-sm font-bold text-foreground mb-1">
+                    {q.name}
+                  </h4>
+                  <div className="flex items-center gap-0.5 text-yellow-500">
+                    {[...Array(5)].map((_, starIdx) => (
+                      <Star
+                        key={starIdx}
+                        className={`w-3 h-3 ${
+                          starIdx < q.rating
+                            ? "fill-yellow-500 text-yellow-500"
+                            : "fill-muted text-muted-foreground/30"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-1 text-yellow-500 mb-3">
-                <Star className="w-4 h-4 fill-yellow-500" />
-                <Star className="w-4 h-4 fill-yellow-500" />
-                <Star className="w-4 h-4 fill-yellow-500" />
-                <Star className="w-4 h-4 fill-yellow-500" />
-                <Star className="w-4 h-4 fill-yellow-500" />
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">{q}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                "{q.text}"
+              </p>
             </motion.div>
           ))}
         </AnimatePresence>
