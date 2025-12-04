@@ -21,7 +21,7 @@ export default function VisionMission() {
         {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">
           OUR PURPOSE
         </span> */}
-        <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-2">
           Driving Digital Excellence
         </h2>
         <p className="text-muted-foreground max-w-3xl mx-auto text-lg">

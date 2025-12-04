@@ -24,7 +24,7 @@ export default function Services() {
         id="services"
         className="py-32 px-4 md:px-12 max-w-7xl mx-auto relative"
       >
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="dark:absolute hidden top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -35,7 +35,7 @@ export default function Services() {
           <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">
             CORE SPECIALIZATIONS
           </span>
-          <h2 className="text-4xl md:text-6xl font-nippo font-bold mb-6">
+          <h2 className="text-4xl md:text-6xl font-nippo font-bold mb-3">
             Strategic Digital Solutions
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

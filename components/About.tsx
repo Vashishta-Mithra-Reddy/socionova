@@ -15,10 +15,10 @@ export default function About() {
         style={{ willChange: "transform, opacity" }}
         className="text-center mb-16 relative z-10 transform-gpu"
       >
-        <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl font-nippo font-bold">
           Welcome to <span className="text-primary">SocioNova</span>
         </h2>
-        <p className="text-muted-foreground mt-4 max-w-3xl mx-auto text-lg leading-relaxed">
+        <p className="text-muted-foreground mt-2 max-w-3xl mx-auto text-lg leading-relaxed">
           SocioNova is a dynamic digital creative company transforming how
           businesses grow, communicate, and build trust online. We help brands
           elevate their presence across major platforms with measurable success.

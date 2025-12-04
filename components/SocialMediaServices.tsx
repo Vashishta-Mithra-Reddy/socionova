@@ -211,7 +211,7 @@ export default function SocialMediaServices() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-nippo font-bold mb-6 tracking-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-nippo font-bold mb-2 tracking-tight"
           >
             Elevate Your Social Presence
           </motion.h2>

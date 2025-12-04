@@ -41,7 +41,7 @@ export default function Team() {
           style={{ willChange: "transform, opacity" }}
           className="mb-20 text-center max-w-2xl mx-auto transform-gpu"
         >
-          <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-nippo font-bold mb-2 tracking-tight">
             The Team
           </h2>
           <p className="text-zinc-500 text-lg md:text-xl leading-relaxed">

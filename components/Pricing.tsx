@@ -62,7 +62,7 @@ export default function Pricing() {
       >
         {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">Best Pricing</span> */}
         <h2 className="text-4xl md:text-5xl font-nippo font-bold">Our Pricing Plans</h2>
-        <p className="text-muted-foreground mt-3">Transparent monthly plans. Higher tiers include previous features plus more.</p>
+        <p className="text-muted-foreground mt-2">Transparent monthly plans. Higher tiers include previous features plus more.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">

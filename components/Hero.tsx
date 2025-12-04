@@ -33,7 +33,7 @@ export default function Hero() {
           blindMinWidth={60}
           spotlightRadius={0.5}
           spotlightSoftness={1}
-          spotlightOpacity={1}
+          spotlightOpacity={0.6}
           mouseDampening={0.15}
           distortAmount={0}
           shineDirection="left"
@@ -49,18 +49,18 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           style={{ willChange: "transform, opacity" }}
-          className="text-5xl md:text-6xl font-bold font-nippo tracking-tighter mb-3 transform-gpu"
+          className="text-5xl md:text-6xl font-bold font-nippo tracking-tighter mb-4 transform-gpu max-w-4xl leading-tight"
         >
-          Socio<span className="text-primary">nova</span>
+          The Only Marketing Agency <span className="text-primary">You'll Ever Need.</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           style={{ willChange: "transform, opacity" }}
-          className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light mb-4 transform-gpu"
+          className="text-lg md:text-2xl text-muted-foreground max-w-xl font-light mb-8 transform-gpu"
         >
-          Premium Social Media Marketing & Growth Solutions
+          Social media and PPC solutions designed to make your business unforgettable.
         </motion.p>
 
         <motion.div
@@ -68,7 +68,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           style={{ willChange: "transform, opacity" }}
-          className="flex flex-col sm:flex-row gap-4 mt-4 transform-gpu"
+          className="flex flex-col sm:flex-row gap-4 transform-gpu"
         >
           <a
             href="#services"
