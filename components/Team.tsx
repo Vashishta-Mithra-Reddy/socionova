@@ -36,7 +36,7 @@ export default function Team() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           style={{ willChange: "transform, opacity" }}
           className="mb-20 text-center max-w-2xl mx-auto transform-gpu"
@@ -54,7 +54,7 @@ export default function Team() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px", amount: 0.6 }}
+          viewport={{ once: true, margin: "-100px" }}
           style={{ willChange: "transform, opacity" }}
           className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center transform-gpu"
         >
@@ -74,7 +74,7 @@ export default function Team() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold font-nippo tracking-wide text-foreground">
                     {founder.name}
