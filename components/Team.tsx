@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { team } from "@/lib/data";
 
-// Animation Variants for cleaner code
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {

@@ -13,7 +13,7 @@ import SocialMediaServices from "@/components/SocialMediaServices";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30">
+    <main className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30 transform-gpu flicker-fix" style={{ willChange: "transform, opacity" }}>
       <Hero />
       <About />
       <Marquee />
