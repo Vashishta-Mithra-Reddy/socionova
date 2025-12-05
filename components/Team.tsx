@@ -54,7 +54,7 @@ export default function Team() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           style={{ willChange: "transform, opacity" }}
           className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center transform-gpu"
         >
