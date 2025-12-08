@@ -10,6 +10,7 @@ import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SocialMediaServices from "@/components/SocialMediaServices";
+import Referrals from "@/components/Referrals";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <VisionMission />
       <Services />
       <SocialMediaServices />
+      <Referrals />
       <Pricing />
       <Testimonials />
       {/* <Newsletter /> */}
