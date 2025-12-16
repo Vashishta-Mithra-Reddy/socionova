@@ -130,6 +130,11 @@ export const team = [
     image: "/team/sneha_chauhan.webp",
   },
   { name: "Ketan", role: "Front End Manager", image: "/team/ketan.webp" },
+  {
+    name: "Shikha Soni",
+    role: "Telesales Executive",
+    image: "/team/shikha_soni.jpeg",
+  },
 ];
 
 export const socialPlatforms = [

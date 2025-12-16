@@ -88,7 +88,13 @@ export default function Team() {
 
           {/* 2. Others Grid (Takes up 8 cols on large screens) */}
           <div className={`${founder ? 'lg:col-span-8' : 'lg:col-span-12'} w-full`}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-12 justify-items-center">
+            {/* 
+               Updated Grid Layout Logic:
+               - Mobile (default): 1 column (grid-cols-1)
+               - Small tablets (sm): 2 columns (sm:grid-cols-2)
+               - Desktop (lg): 3 columns (lg:grid-cols-3) to accommodate 5 members nicely (2 rows: 3 + 2)
+            */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-items-center">
               {others.map((member) => (
                 <motion.div
                   key={member.name}

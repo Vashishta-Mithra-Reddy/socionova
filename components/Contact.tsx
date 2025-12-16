@@ -68,14 +68,22 @@ export default function Contact() {
                   contact@socionova.com
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <a
-                  href="tel:+919736697172"
-                  className="text-foreground hover:underline"
-                >
-                  Call: 9736697172
-                </a>
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-primary mt-1" />
+                <div className="flex flex-col gap-1">
+                  <a
+                    href="tel:+919736697172"
+                    className="text-foreground hover:underline"
+                  >
+                    +91 97366 97172
+                  </a>
+                  <a
+                    href="tel:+919882697172"
+                    className="text-foreground hover:underline"
+                  >
+                    +91 98826 97172
+                  </a>
+                </div>
               </div>
             </div>
 
